@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Welcome</h3>
+  <input type="button" onclick="signInUser();" name="Github"  value="Loginwithgithub">
+  <button onclick="signI();">Log In with Github</button>
+
+
+  <script  src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+  <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyBDlz77ffO0HdW70qIO6_hd8bxOyD9fbFg",
+        authDomain: "intership-listing.firebaseapp.com",
+        projectId: "intership-listing",
+        storageBucket: "intership-listing.appspot.com",
+        messagingSenderId: "131026825229",
+        appId: "1:131026825229:web:7d6ee692bd3e5dc6746544",
+        measurementId: "G-LF39W2DBZE"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        function signInUser(){
+          console.log('BTN Works')
+        }
+  </script>
+</body>
+</html>
